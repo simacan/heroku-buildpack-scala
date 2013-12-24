@@ -152,6 +152,8 @@ if is_play $BUILD_DIR ; then
     rm -rf $BUILD_DIR/target/streams
     rm -rf $BUILD_DIR/target/resolution-cache
   fi
+  echo "-----> Dropping module target dirs"
+  rm -rf $BUILD_DIR/modules/*/target
 fi
 
 # Move compiled app back to where Heroku expects it
